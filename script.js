@@ -385,6 +385,15 @@ buttonSave.addEventListener('click', function() {
 
             listWorker[4].push(new Manager(gender, name, secondName, age, tempArr))
         }
+
+        document.querySelectorAll('input')[0].value = ""
+        document.querySelectorAll('input')[1].value = ""
+        document.querySelectorAll('input')[2].value = ""
+        let newInput = document.querySelectorAll('.newInput')
+        newInput.forEach(element => {
+            element.value = ""
+        });
+
         addTable()
     }
 })
