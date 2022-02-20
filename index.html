@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-form">
+    <h2 class="main-form-header">Форма добавления работников</h2>
+    <form class="form" action="#">
+        <input id="name" type="text" placeholder="Имя" required>
+        <input id="secondName" type="text" placeholder="Фамилия">
+        <input id="age" type="text" placeholder="Возраст">
+        <label for="gender1"><input name="gender" id="gender1" type="radio" checked>Мужской пол</label>
+        <label for="gender2"><input name="gender" id="gender2" type="radio">Женский пол</label>
+        <select name="position-select" id="position">
+            <option value="position" selected>Должность</option>
+            <option value="curier">Курьер</option>
+            <option value="driver">Водитель</option>
+            <option value="teacher">Учитель</option>
+            <option value="loader">Грузчик</option>
+            <option value="manager">Менеджер</option>
+        </select>
+    </form>
+    <button class="button-save">Сохранить</button>
+    <label id="message"></label>
+  </div>
+  <div class="main-table">
+    <table class="table_price">
+        <caption>Работники и их анкеты</caption>
+        <thead>
+          <tr>
+            <th>Свойства</th>
+            <th>Пол</th>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Возраст</th>
+            <th>1</th>
+            <th>2</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
