@@ -71,6 +71,7 @@ select {
     border-bottom: 3px solid rgb(123, 187, 247);
     font-family: "Lucida Grande", sans-serif;
     background-color: rgb(123, 187, 247);
+    margin-bottom: 30px;
 }
 
 .table_price caption {
